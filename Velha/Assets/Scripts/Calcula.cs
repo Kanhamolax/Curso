@@ -6,6 +6,7 @@ public class Calcula
 {
     // Start is called before the first frame update
     public static int[,] matris = new int[3, 3];
+    public static int[] matris2 = new int[9];
     public static int player, vencedor,empate;
 
 
@@ -17,20 +18,28 @@ public class Calcula
       
         for (int i = 0; i < 3; i++)
         {
+           
             for (int j = 0; j < 3; j++)
             {
                 matris[i, j] = 0;
+              
+                    
             }
         }
+        for (int k = 0; k < 9; k++)
+        {
+            matris2[k] = 0;
 
+        }
     }
     public static void inseri(int x, int y, int op)
     {
         if (player == 1)
         {
             matris[x, y] = 1;
+           
         }
-       else if (player == 2)
+        else if (player == 2)
         {
             matris[x, y] = 10;
         }

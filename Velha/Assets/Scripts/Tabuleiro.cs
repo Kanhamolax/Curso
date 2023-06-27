@@ -33,18 +33,19 @@ public class Tabuleiro : MonoBehaviour
                     Calcula.Vencedor1();
                     Calcula.Vencedor2();
                     Calcula.Empate();
+                    JogadaIA();
 
                 }
-                else if (Calcula.player == 2)
-                {
-                    material2.color = cor3;
-                    Calcula.inseri(x - 1, y - 1, 2);
-                    Calcula.player = 1;
+                //else if (Calcula.player == 2)
+                //{
+                //    material2.color = cor3;
+                //    Calcula.inseri(x - 1, y - 1, 2);
+                //    Calcula.player = 1;
                     
-                    Calcula.Vencedor1();
-                    Calcula.Vencedor2();
-                    Calcula.Empate();
-                }
+                //    Calcula.Vencedor1();
+                //    Calcula.Vencedor2();
+                //    Calcula.Empate();
+                //}
 
 
             }
@@ -54,6 +55,11 @@ public class Tabuleiro : MonoBehaviour
     void OnMouseExit()
     {
         this.transform.localScale = new Vector3(1, 1,1);
+
+    }
+
+    void JogadaIA()
+    {
 
     }
 }
