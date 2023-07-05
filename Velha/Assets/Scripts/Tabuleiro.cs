@@ -41,7 +41,7 @@ public class Tabuleiro : MonoBehaviour
                 //    material2.color = cor3;
                 //    Calcula.inseri(x - 1, y - 1, 2);
                 //    Calcula.player = 1;
-                    
+
                 //    Calcula.Vencedor1();
                 //    Calcula.Vencedor2();
                 //    Calcula.Empate();
@@ -60,6 +60,16 @@ public class Tabuleiro : MonoBehaviour
 
     void JogadaIA()
     {
+        x=Random.Range(1,4);
+        y=Random.Range(1,4);
+
+        material2.color = cor3;
+        Calcula.inseri(x - 1, y - 1, 2);
+        Calcula.player = 1;
+
+        Calcula.Vencedor1();
+        Calcula.Vencedor2();
+        Calcula.Empate();
 
     }
 }
